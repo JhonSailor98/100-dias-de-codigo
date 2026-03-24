@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container {
+    max-width: 600px;
+    width: 100%;
+    background: rgba(255, 248, 240, 0.95);
+    backdrop-filter: blur(10px);
+    border-radius: 30px;
+    padding: 30px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+}
+/* Perfil */
+.perfil{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.avatar {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+    font-size: 3rem;
+    color: white;
+    box-shadow: 0 10px 20px rgba(139, 69, 19, 0.3);
+}
+.perfil h1 {
+    color: #4A2C1A;
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+.bio {
+    color: #8B4513;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+.ubicacion{
+    color: #666;
+    font-size: 1rem;
+}
+.ubicacion i {
+    color: #D2691E;
+    margin-right: 10px;
+}
+/* Links */
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+.link-card {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background: white;
+    border-radius: 20px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s;
+    border: 1px solid rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+.link-card:hover {
+    transform: translateX(5px);
+    box-shadow: 0 10px 25px rgba(210, 105, 30, 0.2);
+    border-color: #D2691E;
+}
+.link-card.no-link:hover {
+    transform: none;
+    box-shadow: none;
+    border-color: rgba(0,0,0,0.05);
+    cursor: default;
+}
+.link-icon {
+    width: 50px;
+    height: 50px;
+    background: #f9f3e9;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 1.5rem;
+    color: #8B4513;
+}
+.link-icon.whatsapp {
+    color: #25D366;
+}
+.link-icon.instagram {
+    color: #E4405F;
+}
+.link-icon.menu {
+    color: #8B4513;
+}
+.link-icon.ubicacion {
+    color: #EA4335;
+}
+.link-icon.horarios {
+    color: #4A2C1A;
+}
+.link-content {
+    flex: 1;
+}
+.link-content h3 {
+    font-size: 1.1rem;
+    margin-bottom: 4px;
+    color: #333;
+}
+.link-content p {
+    font-size: 0.9rem;
+    color: #666;
+}
+/* Footer */
+.footer {
+    text-align: center;
+    margin-top: 20px;
+}
+.footer p {
+    color: #666;
+    margin-bottom: 15px;
+}
+.nota {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 20px;
+}
+.btn-contacto {
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: transform 0.3s;
+    border: none;
+}
+.btn-contacto:hover {
+    transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    
+    .avatar {
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem;
+    }
+    
+    .link-content p {
+        font-size: 0.8rem;
+    }
+    
+    .perfil h1 {
+        font-size: 1.5rem;
+    }
+}

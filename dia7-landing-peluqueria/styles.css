@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+/* Hero */
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1200x600');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+.subtitulo {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+}
+.ubicacion {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
+.btn-whatsapp {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: transform 0.3s;
+}
+.btn-whatsapp:hover {
+    transform: scale(1.05);
+}
+
+/* Secciones */
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
+/* Servicios */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+.servicio {
+    text-align: center;
+    padding: 2rem;
+    background: #f9f9f9;
+    border-radius: 15px;
+    transition: transform 0.3s;
+}
+.servicio:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+.servicio i {
+    font-size: 2.5rem;
+    color: #25D366;
+    margin-bottom: 1rem;
+}
+.servicio h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+.servicio p {
+    color: #666;
+    font-weight: 600;
+}
+/* Horarios */
+.horarios {
+    background: #f9f9f9;
+    border-radius: 30px;
+    margin: 2rem auto;
+}
+.horarios-grid {
+    max-width: 500px;
+    margin: 0 auto;
+}
+.dia {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.1rem;
+}
+.dia:last-child {
+    border-bottom: none;
+}
+/* Ubicación */
+.ubicacion-seccion {
+    text-align: center;
+}
+.direccion {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #666;
+}
+.btn-mapa {
+    display: inline-block;
+    background: #4285F4;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+/* Contacto */
+.contacto {
+    text-align: center;
+    background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    color: white;
+    border-radius: 30px;
+}
+.contacto h2 {
+    color: white;
+}
+.contacto p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.btn-whatsapp-grande {
+    display: inline-block;
+    background: white;
+    color: #25D366;
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+.btn-whatsapp-grande:hover {
+    transform: scale(1.05);
+}
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background: #333;
+    color: white;
+    font-size: 0.9rem;
+}
+/* Responsive */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .subtitulo {
+        font-size: 1.1rem;
+    }
+    
+    section {
+        padding: 2rem 1rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}

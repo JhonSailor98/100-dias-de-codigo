@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juan Dev | Portafolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+            <div class="logo">JD</div>
+            <ul class="nav-links">
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+            </nav>
+        <div class="hero">
+            <h1>Juan Dev</h1>
+            <p class="hero-subtitle">Desarrollador frontend en Querétaro</p>
+            <p class="hero-desc">Ayudo a negocios locales a tener presencia digital profesional sin pagar mensualidades ni anuncios molestos.</p>
+            <a href="#contacto" class="btn-primario">Trabajemos juntos</a>
+        </div>
+        </header>
+
+        <main>
+            <section id="proyectos" class="seccion">
+            <h2>Proyectos recientes</h2>
+            <div class="proyectos-grid">
+                <div class="proyecto-card">
+                    <div class="proyecto-icon">
+                        <i class="fas fa-mug-hot"></i>
+                    </div>
+                    <h3>Cafetería El Árbol</h3>
+                    <p>Página de links con WhatsApp, Instagram, menú y ubicación. Todo en un solo lugar.</p>
+                    <div class="proyecto-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JS</span>
+                    </div>
+                    <a href="#" class="btn-secundario" onclick="alert('Proyecto disponible para mostrar a clientes interesados')">Ver caso</a>
+                </div>
+
+                <div class="proyecto-card">
+                    <div class="proyecto-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Peluquería Estilo</h3>
+                    <p>Landing page con sistema de turnos vía WhatsApp y galería de trabajos.</p>
+                    <div class="proyecto-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Flexbox</span>
+                    </div>
+                    <a href="#" class="btn-secundario" onclick="alert('Proyecto disponible para mostrar a clientes interesados')">Ver caso</a>
+                </div>
+
+                <div class="proyecto-card">
+                    <div class="proyecto-icon">
+                        <i class="fas fa-tshirt"></i>
+                    </div>
+                    <h3>Tienda de Ropa</h3>
+                    <p>Catálogo simple con links a WhatsApp para ventas directas.</p>
+                    <div class="proyecto-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Grid</span>
+                    </div>
+                    <a href="#" class="btn-secundario" onclick="alert('Proyecto disponible para mostrar a clientes interesados')">Ver caso</a>
+                </div>
+            </div>
+        </section>
+        <section id="servicios" class="seccion">
+            <h2>Lo que ofrezco</h2>
+            <div class="servicios-grid">
+                <div class="servicio-card">
+                    <i class="fas fa-link"></i>
+                    <h3>Página de links</h3>
+                    <p>Un solo lugar con todos tus enlaces importantes: WhatsApp, Instagram, ubicación, menú.</p>
+                    <p class="precio"></p>
+                </div>
+
+                <div class="servicio-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Landing page</h3>
+                    <p>Página profesional para tu negocio con toda la información que tus clientes necesitan.</p>
+                    <p class="precio"></p>
+                </div>
+
+                <div class="servicio-card">
+                    <i class="fas fa-store"></i>
+                    <h3>Catálogo simple</h3>
+                    <p>Muestra tus productos con fotos y enlace directo a WhatsApp para ventas.</p>
+                    <p class="precio"></p>
+                </div>
+            </div>
+        </section>
+        <section id="contacto" class="seccion contacto">
+            <h2>¿Hablamos de tu proyecto?</h2>
+            <p>Negocios locales en Querétaro, tengo disponibilidad inmediata.</p>
+            
+            <div class="contacto-whatsapp">
+                <p class="contacto-whatsapp-texto">Respuesta en menos de 1 hora</p>
+                <button class="btn-whatsapp" id="btn-contacto">
+                    <i class="fab fa-whatsapp"></i> Enviar WhatsApp
+                </button>
+            </div>
+
+            <div class="redes">
+                <a href="https://instagram.com/juan.dev.code" target="_blank" class="red-link">
+                    <i class="fab fa-instagram"></i> @juan.dev.code
+                </a>
+            </div>
+        </section>
+        </main>
+        <footer class="footer">
+        <p>© 2024 Juan Dev. Construyendo presencia digital para negocios locales.</p>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

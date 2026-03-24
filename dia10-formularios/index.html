@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Clinica TEC | Querétaro</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <ul class="nav-links">
+                    <li><a href="#acercade">Acerca de</a></li>
+                    <li><a href="#servicios">Nuestros servicios</a></li>
+                    <li><a href="#contacto">Agenda una cita</a></li>
+                </ul>
+            </nav>
+            <div class="hero-content">
+            <h1>Clinica Tec</h1>
+            <p class="subtitulo">Tu mejor solución para tu salud</p>
+            <p class="ubicacion">Centro sur,Querétaro</p>
+            </div>
+            <a href="#" class="btn-whatsapp" id="btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> Reserva tu turno
+            </a>
+        </header>
+        
+        <main>
+            <section class="acerca-de">
+                <h2>Sobre Nosotros</h2>
+                <p>Más de 10 años atendiendo familias en Querétaro.</p>
+                <p>Mi compromiso es brindar atención médica de calidad, con diagnósticos claros y tratamientos accesibles.</p>
+                <p>Creo en la medicina preventiva y en acompañar a mis pacientes en cada etapa de su salud.</p>
+                <div class="info-nosotros">
+                    <span>📍 Consultorio en Centro Sur</span>
+                    <span>📞 Citas vía WhatsApp</span>
+                </div>
+            </section>
+            <section class="nuestros-servicios">
+                <h2>Nuestros servicios</h2>
+                <div class="nuestros-servicios-grid">
+                    <div class="servicios-card">
+                        <h3>Consulta general</h3>
+                        <p>Valoración médica completa, diagnóstico y tratamiento</p>
+                        <span>$500</span>
+                    </div>
+                    <div class="servicios-card">
+                        <h3>Consulta de seguimiento</h3>
+                        <p>Para pacientes en tratamiento continuo</p>
+                        <span>$350</span>
+                    </div>
+                    <div class="servicios-card">
+                        <h3>Examenes de laboratorio</h3>
+                        <p>Convenio con laboratorios locales (resultados en 24h)</p>
+                        <span>Desde $300</span>
+                    </div>
+                    <div class="servicios-card">
+                        <h3>Receta electrónica</h3>
+                        <p>Envío digital a tu farmacia de preferencia</p>
+                        <span>Incluido en consulta</span>
+                    </div>
+                </div>
+            </section>
+            <section class="agenda-cita">
+                <h2>Solicita tu cita</h2>
+                <p>Completa el formulario y en menos de 1 hora te confirmamos vía WhatsApp</p>
+        <form id="formCita" class="formulario-cita">
+        <div class="campo">
+            <label for="nombre">Nombre completo *</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+
+        <div class="campo">
+            <label for="telefono">Teléfono (WhatsApp) *</label>
+            <input type="tel" id="telefono" name="telefono" required>
+        </div>
+
+        <div class="campo">
+            <label for="email">Correo electrónico</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="campo">
+            <label for="motivo">Motivo de consulta</label>
+            <textarea id="motivo" name="motivo" rows="3" placeholder="Ejemplo: dolor de cabeza, chequeo general, alergias..."></textarea>
+        </div>
+
+        <div class="campo">
+            <label for="fecha">Fecha preferida</label>
+            <input type="date" id="fecha" name="fecha">
+        </div>
+
+        <button type="submit" class="btn-cita">Solicitar cita</button>
+        <p class="mensaje-confirmacion" id="mensajeConfirmacion"></p>
+    </form>
+            </section>
+            <footer class="footer">
+                <p>Página diseñada por @juan.dev.code para negocios locales en Querétaro</p>
+            </footer>
+        </main>
+            <script src="script.js"></script>
+    </body>
+</html>

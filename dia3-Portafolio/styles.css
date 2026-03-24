@@ -1,0 +1,176 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f5f7fa;
+    color:#333;
+    line-height: 1.6;
+}
+/* HEADER */
+.header{
+    background: linear-gradient(135deg, #667eea 0%,#764ba2 100%);
+    color:white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+.header h1{
+    font-size: 2.5rem;
+    opacity: 0.9;
+}
+/*Sección proyectos*/
+.seccion-proyectos{
+    max-width: 1200px;
+    margin: 4rem auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+.seccion-proyectos h2{
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+.subtitulos-proyectos{
+    color: #666;
+    margin-bottom: 3rem;
+}
+/* GRID PARA EL CONTENEDOR PRINCIAL*/
+.contenedor-proyectos{
+    display: grid;
+    grid-template-columns: 
+    repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+    margin-bottom: 4rem;
+}
+/*Tarjeta de proyectos*/
+.proyecto-tajeta{
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-align: left;
+    display:flex;
+    flex-direction: column;
+}
+.proyecto-tajeta:hover{
+    transform: translateY(-5px);
+}
+.proyecto-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+.proyecto-dia{
+    background: #667eea;
+    color:white;
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.proyecto-header i{
+    font-size: 2rem;
+    color:#667eea
+}
+.proyecto-tarjeta h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+.proyecto-tajeta p{
+    color:#666;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+/* TECNOLOGÍAS (usando flexbox) */
+.tecnologias{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+.tecnologias span{
+    background: #f0f0f0;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+.btn-proyecto{
+    background: #667eea;
+    color:white;
+    border:none;
+    padding:0.8rem;
+    border-radius: 10px;
+    font-size: 1rem;
+    cursor:pointer;
+    transition: background-color 0.3s;
+    width:100%;
+    font-weight: 600px;
+}
+.btn-proyecto:hover:not(:disabled){
+    background-color: #5a67d8;
+}
+.btn-proyecto:disabled{
+    background: #ccc;
+    cursor: 2px dashed #ccc;
+}
+/* TARJETA PLACEHOLDER */
+.proyecto-placeholder{
+    background: #f9f9f9;
+    border: 2px dashed #ccc;
+}
+.proyecto-placeholder .proyecto-header i{
+    color: #999;
+}
+/*Sección contacto (con flexbox)*/
+.seccion-contacto{
+    background: white;
+    text-align: center;
+    padding: 4rem 2rem;
+    border-top: 1px solid #eee;
+}
+.seccion-contacto h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color:#333;
+}
+.seccion-contacto p{
+    color: #666;
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+}
+.btn-contacto{
+    display: inline-flex;
+    align-items: center;
+    gap:10px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    transition: transform 0.3s;
+}
+.btn-contacto:hover{
+    transform: scale(1.05);
+}
+.btn-contacto i{
+    font-size: 1.5rem;
+}
+/*Diseño responsivo*/
+@media(max-width: 768px){
+    .header h1{
+        font-size: 2rem;
+    }
+    .header p{
+        font-size: 1rem;
+    }
+    .seccion-proyectos{
+        margin: 2rem auto;
+    }
+}
